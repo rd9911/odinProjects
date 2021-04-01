@@ -1,0 +1,53 @@
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+  }
+
+#container {
+    display: grid;
+    margin: 0 auto;
+    grid-gap: 1em;
+    width: 360px;
+    height: 550px;
+    border: 1px solid #000;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+}
+
+  
+  .grid-item {
+    display: inline-block;
+    padding: 20px;
+    border: 1px solid #ddd;
+  }
+
+  #display {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 2px;
+    width: 318px;
+    height: 70px;
+    border-bottom: 1px solid #000;
+  }
+
+  #clear, #factor, #percentile, #divide, #seven, #eight, 
+  #nine, #multiply, #four, #five, #six, #subtract, 
+  #one, #two, #three, #add, #zero, #floating, #calculate {
+      font-size: 15px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      text-align: center;
+      border-radius: 100px;
+      width: 20px;
+      height: 20px;
+      margin: 8px;
+      margin-bottom: 5px;
+      margin-top: 10px;
+      margin-left: 15px;
+      margin-right: 10px;
+      border: 1px solid #000;
+  }
+  #zero {
+      width: 7.2em !important;
+      text-align: left !important;
+  }
